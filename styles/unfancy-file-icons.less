@@ -1,0 +1,319 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+// ######## #### ##       ########    ####  ######   #######  ##    ##  ######
+// ##        ##  ##       ##           ##  ##    ## ##     ## ###   ## ##    ##
+// ##        ##  ##       ##           ##  ##       ##     ## ####  ## ##
+// ######    ##  ##       ######       ##  ##       ##     ## ## ## ##  ######
+// ##        ##  ##       ##           ##  ##       ##     ## ##  ####       ##
+// ##        ##  ##       ##           ##  ##    ## ##     ## ##   ### ##    ##
+// ##       #### ######## ########    ####  ######   #######  ##    ##  ######
+
+@yellow: #EBCB8B;
+@strong-yellow: saturate(@yellow, 30%);
+@orange: #D08770;
+@strong-orange: saturate(@orange, 30%);
+@red: #AB7967;
+@strong-red: saturate(@red, 30%);
+@magenta: #BF616A;
+@strong-magenta: saturate(@magenta, 30%);
+@violet: #B48EAD;
+@strong-violet: saturate(@violet, 30%);
+@blue: #8FA1B3;
+@strong-blue: saturate(@blue, 30%);
+@cyan: #96B5B4;
+@strong-cyan: saturate(@cyan, 30%);
+@green: #A3BE8C;
+@strong-green: saturate(@green, 30%);
+
+@octicons: 'Octicons Regular';
+
+atom-panel ul.tab-bar li.tab .title[data-name]:before {
+  top: -1px;
+}
+
+[data-name]:before {
+  margin-right: 5px;
+  position: relative;
+  top: 1px;
+  font-family: @octicons;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  font-size: 1.45em;
+  width: 1em;
+  height: 1em;
+}
+
+//  ######   #######  ##     ## ########   ######  ########  ######
+// ##    ## ##     ## ##     ## ##     ## ##    ## ##       ##    ##
+// ##       ##     ## ##     ## ##     ## ##       ##       ##
+//  ######  ##     ## ##     ## ########  ##       ######    ######
+//       ## ##     ## ##     ## ##   ##   ##       ##             ##
+// ##    ## ##     ## ##     ## ##    ##  ##    ## ##       ##    ##
+//  ######   #######   #######  ##     ##  ######  ########  ######
+
+
+// Coffeescript/Javascript/Typescript files
+[data-name$='.coffee']:before,
+[data-name$='.ts']:before,
+[data-name$='.js']:before,
+[data-name$='.litcoffee']:before,
+[data-name$='.coffee.md']:before,
+[data-name='Cakefile']:before {
+  content: '\f010';
+  color: @green;
+}
+
+// Php files
+[data-name$='.php']:before {
+  color: @green;
+  content: '\f05f';
+}
+
+// Ruby files
+[data-name$='.rb']:before,
+[data-name$='.ru']:before,
+[data-name$='.rake']:before,
+[data-name$='.gemspec']:before,
+[data-name='Gemfile']:before,
+[data-name='Rakefile']:before,
+[data-name='Guardfile']:before,
+[data-name='Capfile']:before {
+  color: @magenta;
+  content: '\f047';
+}
+
+// Stylesheets
+[data-name$='.styl']:before,
+[data-name$='.css']:before,
+[data-name$='.sass']:before,
+[data-name$='.scss']:before,
+[data-name$='.less']:before {
+  content: '\f0d1';
+  color: @yellow;
+}
+
+// Source map file
+[data-name$='.map']:before {
+  content: '\f060';
+  color: @orange;
+}
+
+// Templates
+[data-name$='.jade']:before,
+[data-name$='.haml']:before,
+[data-name$='.hamlc']:before,
+[data-name$='.erb']:before,
+[data-name$='.twig']:before,
+[data-name$='.hbs']:before {
+  content: '\f05f';
+  color: @yellow;
+}
+
+// HTML files
+[data-name$='.html']:before {
+  color: @green;
+  content: "\f0b6";
+}
+
+// Shell scripts
+[data-path*='bin/'].icon-file-text:before,
+[data-path*='bin/'].title:before,
+[data-name$='.sh']:before,
+[data-name$='.bat']:before {
+  content: '\f0c8';
+  color: @magenta;
+}
+
+//  ######   #######  ##    ## ######## ####  ######
+// ##    ## ##     ## ###   ## ##        ##  ##    ##
+// ##       ##     ## ####  ## ##        ##  ##
+// ##       ##     ## ## ## ## ######    ##  ##   ####
+// ##       ##     ## ##  #### ##        ##  ##    ##
+// ##    ## ##     ## ##   ### ##        ##  ##    ##
+//  ######   #######  ##    ## ##       ####  ######
+
+// Meta configuration files
+[data-name$='.gitignore']:before,
+[data-name$='.gitattributes']:before,
+[data-name$='.gitkeep']:before,
+[data-name$='.npmignore']:before,
+[data-name$='.npmrc']:before,
+[data-name$='.biscottoopts']:before,
+[data-name$='.rspec']:before,
+[data-name$='.pairs']:before,
+[data-name$='.spectacular']:before,
+[data-name='Procfile']:before,
+[data-name='.htaccess']:before,
+[data-name$='.ruby-version']:before {
+  content: '\f02f';
+  color: @strong-magenta;
+}
+
+// GIT repo
+[data-name$='.git']:before {
+  content: '\f00a';
+  font-size: 18px;
+}
+
+// Lock files
+[data-name$='.lock']:before {
+  content: '\f06a';
+  color: @strong-magenta;
+}
+
+// In project configuration files
+[data-name$='.json']:before,
+[data-name$='.cson']:before,
+[data-name$='.yml']:before,
+.icon-file-text[data-name^='.travis']:before  {
+  content: '\f07c';
+  color: @violet;
+}
+
+// DS_Store
+[data-name$='.DS_Store']:before,
+[data-name*='.sublime-']:before {
+  content: '\f02f';
+}
+
+// Log files
+.file-icon-log:before,
+[data-name$='.log']:before {
+  content: '\f091';
+  color: @orange;
+}
+
+// ########     ###    ########    ###
+// ##     ##   ## ##      ##      ## ##
+// ##     ##  ##   ##     ##     ##   ##
+// ##     ## ##     ##    ##    ##     ##
+// ##     ## #########    ##    #########
+// ##     ## ##     ##    ##    ##     ##
+// ########  ##     ##    ##    ##     ##
+
+// Archives
+[data-name$='.zip']:before,
+[data-name$='.rar']:before,
+[data-name$='.gz']:before {
+  content: '\f0c4';
+  color: @cyan;
+}
+
+// Database & dumps
+[data-name$='.sqlite']:before,
+[data-name$='.csv']:before,
+[data-name$='.sqlite3']:before,
+[data-name$='.dump']:before {
+  text-align: center;
+  content: "\f062";
+  color: @cyan;
+}
+
+// Ctags files
+[data-name='.ctags']:before,
+[data-name='.tags']:before,
+[data-name='.gemtags']:before,
+[data-name='tags']:before,
+[data-name='TAGS']:before {
+  content: '\f015';
+  color: @cyan;
+}
+
+// Todos
+[data-name*='todo']:before {
+  content: '\f076';
+  color: @cyan;
+}
+
+// ########   #######   ######   ######
+// ##     ## ##     ## ##    ## ##    ##
+// ##     ## ##     ## ##       ##
+// ##     ## ##     ## ##        ######
+// ##     ## ##     ## ##             ##
+// ##     ## ##     ## ##    ## ##    ##
+// ########   #######   ######   ######
+
+// Repository files
+[data-name*='LICENSE']:before,
+[data-name^='CHANGELOG']:before,
+[data-name^='CONTRIBUTING']:before,
+[data-name^='README']:before,
+[data-name^='Readme']:before,
+[data-name^='License']:before,
+[data-name^='History']:before {
+  color: @strong-cyan;
+}
+
+// Markdown files
+[data-name$='.md']:before,
+[data-name$='.markdown']:before {
+  content: '\f0c9';
+  color: @strong-cyan;
+}
+
+// PDF files
+[data-name$='.pdf']:before {
+  content: '\f014';
+  color: @strong-cyan;
+}
+
+// ##     ## ######## ########  ####    ###     ######
+// ###   ### ##       ##     ##  ##    ## ##   ##    ##
+// #### #### ##       ##     ##  ##   ##   ##  ##
+// ## ### ## ######   ##     ##  ##  ##     ##  ######
+// ##     ## ##       ##     ##  ##  #########       ##
+// ##     ## ##       ##     ##  ##  ##     ## ##    ##
+// ##     ## ######## ########  #### ##     ##  ######
+
+
+// Fonts files
+[data-name$='.woff']:before,
+[data-name$='.ttf']:before,
+[data-name$='.otf']:before,
+[data-name$='.eot']:before {
+  content: '\f05e';
+  color: @green;
+}
+
+// Images files
+[data-name$='.jpg']:before,
+[data-name$='.png']:before,
+[data-name$='.gif']:before,
+[data-name$='.psd']:before,
+[data-name$='.svg']:before,
+[data-name$='.ico']:before {
+  content: '\f012';
+  color: @green;
+}
+
+[data-name$='.psd']:before,
+[data-name$='.ai']:before,
+[data-name$='.indd']:before,
+[data-name$='.afdesign']:before {
+  content: '\f058';
+  color: @green;
+}
+
+[data-name$='.sketch']:before {
+  content: '\f047';
+  color: @green;
+}
+
+// Videos files
+[data-name$='.mpg']:before,
+[data-name$='.avi']:before,
+[data-name$='.mov']:before,
+[data-name$='.flv']:before,
+[data-name$='.swf']:before,
+[data-name$='.ogg']:before {
+  content: '\f057';
+  color: @green;
+}
