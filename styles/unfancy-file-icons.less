@@ -49,6 +49,7 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
   font-size: 1.45em;
   width: 1em;
   height: 1em;
+  text-align: center;
 }
 
 //  ######   #######  ##     ## ########   ######  ########  ######
@@ -178,6 +179,36 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
   color: @violet;
 }
 
+[data-name$='.csv']:before,
+[data-name$='.tsv']:before {
+  content: '\f062';
+  color: @violet;
+}
+
+// Database & dumps
+[data-name$='.sqlite']:before,
+[data-name$='.sqlite3']:before,
+[data-name$='.dump']:before {
+  content: "\f096";
+  color: @violet;
+}
+
+// Ctags files
+[data-name='.ctags']:before,
+[data-name='.tags']:before,
+[data-name='.gemtags']:before,
+[data-name='tags']:before,
+[data-name='TAGS']:before {
+  content: '\f015';
+  color: @violet;
+}
+
+// Todos
+[data-name*='todo']:before {
+  content: '\f076';
+  color: @violet;
+}
+
 // DS_Store
 [data-name$='.DS_Store']:before,
 [data-name*='.sublime-']:before {
@@ -191,45 +222,11 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
   color: @orange;
 }
 
-// ########     ###    ########    ###
-// ##     ##   ## ##      ##      ## ##
-// ##     ##  ##   ##     ##     ##   ##
-// ##     ## ##     ##    ##    ##     ##
-// ##     ## #########    ##    #########
-// ##     ## ##     ##    ##    ##     ##
-// ########  ##     ##    ##    ##     ##
-
 // Archives
 [data-name$='.zip']:before,
 [data-name$='.rar']:before,
 [data-name$='.gz']:before {
   content: '\f0c4';
-  color: @cyan;
-}
-
-// Database & dumps
-[data-name$='.sqlite']:before,
-[data-name$='.csv']:before,
-[data-name$='.sqlite3']:before,
-[data-name$='.dump']:before {
-  text-align: center;
-  content: "\f062";
-  color: @cyan;
-}
-
-// Ctags files
-[data-name='.ctags']:before,
-[data-name='.tags']:before,
-[data-name='.gemtags']:before,
-[data-name='tags']:before,
-[data-name='TAGS']:before {
-  content: '\f015';
-  color: @cyan;
-}
-
-// Todos
-[data-name*='todo']:before {
-  content: '\f076';
   color: @cyan;
 }
 
@@ -279,8 +276,8 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
 [data-name$='.ttf']:before,
 [data-name$='.otf']:before,
 [data-name$='.eot']:before {
-  content: '\f05e';
-  color: @green;
+  content: '\f063';
+  color: @strong-blue;
 }
 
 // Images files
@@ -291,7 +288,7 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
 [data-name$='.svg']:before,
 [data-name$='.ico']:before {
   content: '\f012';
-  color: @green;
+  color: @strong-blue;
 }
 
 [data-name$='.psd']:before,
@@ -299,12 +296,12 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
 [data-name$='.indd']:before,
 [data-name$='.afdesign']:before {
   content: '\f058';
-  color: @green;
+  color: @strong-blue;
 }
 
 [data-name$='.sketch']:before {
   content: '\f047';
-  color: @green;
+  color: @strong-blue;
 }
 
 // Videos files
@@ -315,5 +312,5 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
 [data-name$='.swf']:before,
 [data-name$='.ogg']:before {
   content: '\f057';
-  color: @green;
+  color: @strong-blue;
 }
