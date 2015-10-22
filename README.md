@@ -2,7 +2,7 @@
 
 My file icons stylesheets as a package
 
-![Screenshot](https://github.com/abe33/unfancy-file-icons/blob/master/resources/screenshot.png?raw=true)
+![Screenshot](https://github.com/abe33/unfancy-file-icons/blob/master/screenshot.png?raw=true)
 
 - Use only icons from Octicons (shipped with Atom)
 - Use a simple color code (with a few exceptions when it make more sense, like for ruby files) which works as follow:
