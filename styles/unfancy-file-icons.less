@@ -149,7 +149,8 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
 [data-name$='.spectacular']:before,
 [data-name='Procfile']:before,
 [data-name='.htaccess']:before,
-[data-name$='.ruby-version']:before {
+[data-name$='.ruby-version']:before,
+[data-name^='.'][data-name$='rc']:before {
   content: '\f02f';
   color: @strong-magenta;
 }
