@@ -180,6 +180,14 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
     color: @violet;
   }
 
+  // Configuration template files
+  [data-name*='.json.']:before,
+  [data-name*='.cson.']:before,
+  [data-name*='.yml.']:before {
+    content: '\f07c';
+    color: darken(desaturate(@violet, 15%), 20%);
+  }
+
   [data-name$='.csv']:before,
   [data-name$='.tsv']:before {
     content: '\f062';
