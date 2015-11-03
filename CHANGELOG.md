@@ -1,3 +1,10 @@
+<a name="v0.3.1"></a>
+# v0.3.1 (2015-11-03)
+
+## :bug: Bug Fixes
+
+- Fix icons no longer applied to search results and fuzzy-finder ([2d93c6bb](https://github.com/abe33/atom-unfancy-file-icons/commit/2d93c6bb08546b55a58af3b3bae2850629cc1efd))
+
 <a name="v0.3.0"></a>
 # v0.3.0 (2015-11-03)
 
