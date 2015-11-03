@@ -61,74 +61,76 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
 //  ######   #######   #######  ##     ##  ######  ########  ######
 
 
-// Most source files
-[data-name$='.ts']:before,
-[data-name$='.js']:before,
-[data-name$='.py']:before,
-[data-name$='.coffee']:before,
-[data-name$='.litcoffee']:before,
-[data-name$='.coffee.md']:before,
-[data-name='Cakefile']:before {
-  content: '\f010';
-  color: @green;
-}
+.file,
+.tab {
+  // Most source files
+  [data-name$='.ts']:before,
+  [data-name$='.js']:before,
+  [data-name$='.py']:before,
+  [data-name$='.coffee']:before,
+  [data-name$='.litcoffee']:before,
+  [data-name$='.coffee.md']:before,
+  [data-name='Cakefile']:before {
+    content: '\f010';
+    color: @green;
+  }
 
-// Php files
-[data-name$='.html']:before,
-[data-name$='.xml']:before,
-[data-name$='.php']:before {
-  color: @green;
-  content: '\f05f';
-}
+  // Php files
+  [data-name$='.html']:before,
+  [data-name$='.xml']:before,
+  [data-name$='.php']:before {
+    color: @green;
+    content: '\f05f';
+  }
 
-// Ruby files
-[data-name$='.rb']:before,
-[data-name$='.ru']:before,
-[data-name$='.rake']:before,
-[data-name$='.gemspec']:before,
-[data-name='Gemfile']:before,
-[data-name='Rakefile']:before,
-[data-name='Guardfile']:before,
-[data-name='Capfile']:before {
-  color: @magenta;
-  content: '\f047';
-}
+  // Ruby files
+  [data-name$='.rb']:before,
+  [data-name$='.ru']:before,
+  [data-name$='.rake']:before,
+  [data-name$='.gemspec']:before,
+  [data-name='Gemfile']:before,
+  [data-name='Rakefile']:before,
+  [data-name='Guardfile']:before,
+  [data-name='Capfile']:before {
+    color: @magenta;
+    content: '\f047';
+  }
 
-// Stylesheets
-[data-name$='.styl']:before,
-[data-name$='.css']:before,
-[data-name$='.sass']:before,
-[data-name$='.scss']:before,
-[data-name$='.less']:before {
-  content: '\f0d1';
-  color: @yellow;
-}
+  // Stylesheets
+  [data-name$='.styl']:before,
+  [data-name$='.css']:before,
+  [data-name$='.sass']:before,
+  [data-name$='.scss']:before,
+  [data-name$='.less']:before {
+    content: '\f0d1';
+    color: @yellow;
+  }
 
-// Source map file
-[data-name$='.map']:before {
-  content: '\f060';
-  color: @orange;
-}
+  // Source map file
+  [data-name$='.map']:before {
+    content: '\f060';
+    color: @orange;
+  }
 
-// Templates
-[data-name$='.jade']:before,
-[data-name$='.haml']:before,
-[data-name$='.hamlc']:before,
-[data-name$='.erb']:before,
-[data-name$='.twig']:before,
-[data-name$='.hbs']:before {
-  content: '\f05f';
-  color: @yellow;
-}
+  // Templates
+  [data-name$='.jade']:before,
+  [data-name$='.haml']:before,
+  [data-name$='.hamlc']:before,
+  [data-name$='.erb']:before,
+  [data-name$='.twig']:before,
+  [data-name$='.hbs']:before {
+    content: '\f05f';
+    color: @yellow;
+  }
 
-// Shell scripts
-[data-path*='bin/'].icon-file-text:before,
-[data-path*='bin/'].title:before,
-[data-name$='.sh']:before,
-[data-name$='.bat']:before {
-  content: '\f0c8';
-  color: @magenta;
-}
+  // Shell scripts
+  [data-path*='bin/'].icon-file-text:before,
+  [data-path*='bin/'].title:before,
+  [data-name$='.sh']:before,
+  [data-name$='.bat']:before {
+    content: '\f0c8';
+    color: @magenta;
+  }
 
 //  ######   #######  ##    ## ######## ####  ######
 // ##    ## ##     ## ###   ## ##        ##  ##    ##
@@ -138,95 +140,95 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
 // ##    ## ##     ## ##   ### ##        ##  ##    ##
 //  ######   #######  ##    ## ##       ####  ######
 
-// Meta configuration files
-[data-name$='.gitignore']:before,
-[data-name$='.gitattributes']:before,
-[data-name$='.gitkeep']:before,
-[data-name$='.npmignore']:before,
-[data-name$='.npmrc']:before,
-[data-name$='.biscottoopts']:before,
-[data-name$='.rspec']:before,
-[data-name$='.pairs']:before,
-[data-name$='.spectacular']:before,
-[data-name='Procfile']:before,
-[data-name='.htaccess']:before,
-[data-name$='.ruby-version']:before,
-[data-name^='.'][data-name$='rc']:before {
-  content: '\f02f';
-  color: @strong-magenta;
-}
+  // Meta configuration files
+  [data-name$='.gitignore']:before,
+  [data-name$='.gitattributes']:before,
+  [data-name$='.gitkeep']:before,
+  [data-name$='.npmignore']:before,
+  [data-name$='.npmrc']:before,
+  [data-name$='.biscottoopts']:before,
+  [data-name$='.rspec']:before,
+  [data-name$='.pairs']:before,
+  [data-name$='.spectacular']:before,
+  [data-name='Procfile']:before,
+  [data-name='.htaccess']:before,
+  [data-name$='.ruby-version']:before,
+  [data-name^='.'][data-name$='rc']:before {
+    content: '\f02f';
+    color: @strong-magenta;
+  }
 
-// GIT repo
-[data-name$='.git']:before {
-  content: '\f00a';
-  font-size: 18px;
-}
+  // GIT repo
+  [data-name$='.git']:before {
+    content: '\f00a';
+    font-size: 18px;
+  }
 
-// Lock files
-[data-name$='.lock']:before {
-  content: '\f06a';
-  color: @strong-magenta;
-}
+  // Lock files
+  [data-name$='.lock']:before {
+    content: '\f06a';
+    color: @strong-magenta;
+  }
 
-// In project configuration files
-[data-name$='.json']:before,
-[data-name$='.cson']:before,
-[data-name$='.yml']:before,
-.icon-file-text[data-name^='.travis']:before  {
-  content: '\f07c';
-  color: @violet;
-}
+  // In project configuration files
+  [data-name$='.json']:before,
+  [data-name$='.cson']:before,
+  [data-name$='.yml']:before,
+  .icon-file-text[data-name^='.travis']:before  {
+    content: '\f07c';
+    color: @violet;
+  }
 
-[data-name$='.csv']:before,
-[data-name$='.tsv']:before {
-  content: '\f062';
-  color: @violet;
-}
+  [data-name$='.csv']:before,
+  [data-name$='.tsv']:before {
+    content: '\f062';
+    color: @violet;
+  }
 
-// Database & dumps
-[data-name$='.sqlite']:before,
-[data-name$='.sqlite3']:before,
-[data-name$='.dump']:before {
-  content: "\f096";
-  color: @violet;
-}
+  // Database & dumps
+  [data-name$='.sqlite']:before,
+  [data-name$='.sqlite3']:before,
+  [data-name$='.dump']:before {
+    content: "\f096";
+    color: @violet;
+  }
 
-// Ctags files
-[data-name='.ctags']:before,
-[data-name='.tags']:before,
-[data-name='.gemtags']:before,
-[data-name='tags']:before,
-[data-name='TAGS']:before {
-  content: '\f015';
-  color: @violet;
-}
+  // Ctags files
+  [data-name='.ctags']:before,
+  [data-name='.tags']:before,
+  [data-name='.gemtags']:before,
+  [data-name='tags']:before,
+  [data-name='TAGS']:before {
+    content: '\f015';
+    color: @violet;
+  }
 
-// Todos
-[data-name*='todo']:before {
-  content: '\f076';
-  color: @violet;
-}
+  // Todos
+  [data-name*='todo']:before {
+    content: '\f076';
+    color: @violet;
+  }
 
-// DS_Store
-[data-name$='.DS_Store']:before,
-[data-name*='.sublime-']:before {
-  content: '\f02f';
-}
+  // DS_Store
+  [data-name$='.DS_Store']:before,
+  [data-name*='.sublime-']:before {
+    content: '\f02f';
+  }
 
-// Log files
-.file-icon-log:before,
-[data-name$='.log']:before {
-  content: '\f091';
-  color: @orange;
-}
+  // Log files
+  .file-icon-log:before,
+  [data-name$='.log']:before {
+    content: '\f091';
+    color: @orange;
+  }
 
-// Archives
-[data-name$='.zip']:before,
-[data-name$='.rar']:before,
-[data-name$='.gz']:before {
-  content: '\f0c4';
-  color: @violet;
-}
+  // Archives
+  [data-name$='.zip']:before,
+  [data-name$='.rar']:before,
+  [data-name$='.gz']:before {
+    content: '\f0c4';
+    color: @violet;
+  }
 
 // ########   #######   ######   ######
 // ##     ## ##     ## ##    ## ##    ##
@@ -236,34 +238,34 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
 // ##     ## ##     ## ##    ## ##    ##
 // ########   #######   ######   ######
 
-// Repository files
-[data-name*='LICENSE']:before,
-[data-name^='CHANGELOG']:before,
-[data-name^='CONTRIBUTING']:before,
-[data-name^='README']:before,
-[data-name^='Readme']:before,
-[data-name^='License']:before,
-[data-name^='History']:before,
-[data-name*='.tex']:before,
-[data-name*='.txt']:before,
-[data-name*='.dvi']:before,
-[data-name*='.rdoc']:before {
-  content: '\f011';
-  color: @strong-cyan;
-}
+  // Repository files
+  [data-name*='LICENSE']:before,
+  [data-name^='CHANGELOG']:before,
+  [data-name^='CONTRIBUTING']:before,
+  [data-name^='README']:before,
+  [data-name^='Readme']:before,
+  [data-name^='License']:before,
+  [data-name^='History']:before,
+  [data-name*='.tex']:before,
+  [data-name*='.txt']:before,
+  [data-name*='.dvi']:before,
+  [data-name*='.rdoc']:before {
+    content: '\f011';
+    color: @strong-cyan;
+  }
 
-// Markdown files
-[data-name$='.md']:before,
-[data-name$='.markdown']:before {
-  content: '\f0c9';
-  color: @strong-cyan;
-}
+  // Markdown files
+  [data-name$='.md']:before,
+  [data-name$='.markdown']:before {
+    content: '\f0c9';
+    color: @strong-cyan;
+  }
 
-// PDF files
-[data-name$='.pdf']:before {
-  content: '\f014';
-  color: @strong-cyan;
-}
+  // PDF files
+  [data-name$='.pdf']:before {
+    content: '\f014';
+    color: @strong-cyan;
+  }
 
 // ##     ## ######## ########  ####    ###     ######
 // ###   ### ##       ##     ##  ##    ## ##   ##    ##
@@ -274,46 +276,62 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
 // ##     ## ######## ########  #### ##     ##  ######
 
 
-// Fonts files
-[data-name$='.woff']:before,
-[data-name$='.ttf']:before,
-[data-name$='.otf']:before,
-[data-name$='.eot']:before {
-  content: '\f063';
-  color: @strong-blue;
+  // Fonts files
+  [data-name$='.woff']:before,
+  [data-name$='.ttf']:before,
+  [data-name$='.otf']:before,
+  [data-name$='.eot']:before {
+    content: '\f063';
+    color: @strong-blue;
+  }
+
+  // Images files
+  [data-name$='.jpg']:before,
+  [data-name$='.png']:before,
+  [data-name$='.gif']:before,
+  [data-name$='.psd']:before,
+  [data-name$='.svg']:before,
+  [data-name$='.ico']:before {
+    content: '\f012';
+    color: @strong-blue;
+  }
+
+  [data-name$='.psd']:before,
+  [data-name$='.ai']:before,
+  [data-name$='.indd']:before,
+  [data-name$='.afdesign']:before {
+    content: '\f058';
+    color: @strong-blue;
+  }
+
+  [data-name$='.sketch']:before {
+    content: '\f047';
+    color: @strong-blue;
+  }
+
+  // Videos files
+  [data-name$='.mpg']:before,
+  [data-name$='.avi']:before,
+  [data-name$='.mov']:before,
+  [data-name$='.flv']:before,
+  [data-name$='.swf']:before,
+  [data-name$='.ogg']:before {
+    content: '\f057';
+    color: @strong-blue;
+  }
 }
 
-// Images files
-[data-name$='.jpg']:before,
-[data-name$='.png']:before,
-[data-name$='.gif']:before,
-[data-name$='.psd']:before,
-[data-name$='.svg']:before,
-[data-name$='.ico']:before {
-  content: '\f012';
-  color: @strong-blue;
-}
+// ########  #### ########   ######
+// ##     ##  ##  ##     ## ##    ##
+// ##     ##  ##  ##     ## ##
+// ##     ##  ##  ########   ######
+// ##     ##  ##  ##   ##         ##
+// ##     ##  ##  ##    ##  ##    ##
+// ########  #### ##     ##  ######
 
-[data-name$='.psd']:before,
-[data-name$='.ai']:before,
-[data-name$='.indd']:before,
-[data-name$='.afdesign']:before {
-  content: '\f058';
-  color: @strong-blue;
-}
-
-[data-name$='.sketch']:before {
-  content: '\f047';
-  color: @strong-blue;
-}
-
-// Videos files
-[data-name$='.mpg']:before,
-[data-name$='.avi']:before,
-[data-name$='.mov']:before,
-[data-name$='.flv']:before,
-[data-name$='.swf']:before,
-[data-name$='.ogg']:before {
-  content: '\f057';
-  color: @strong-blue;
+.directory > .header {
+  > [data-name$='.git']:before {
+    content: '\f00a';
+    font-size: 18px;
+  }
 }
