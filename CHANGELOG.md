@@ -1,3 +1,10 @@
+<a name="v0.4.0"></a>
+# v0.4.0 (2016-01-25)
+
+## :sparkles: Features
+
+- Add support for JS variant (ES6, JSX, etc.) ([9f074b51](https://github.com/abe33/atom-unfancy-file-icons/commit/9f074b51c2373bdc184402ba6a39e01cc6fda3d0))
+
 <a name="v0.3.1"></a>
 # v0.3.1 (2015-11-03)
 
