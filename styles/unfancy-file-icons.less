@@ -65,6 +65,9 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
 .list-group li,
 .tab {
   // Most source files
+  [data-name$='.hx']:before,
+  [data-name$='.hxsl']:before,
+  [data-name$='.hs']:before,
   [data-name$='.ts']:before,
   [data-name$='.js']:before,
   [data-name$='.jsx']:before,
@@ -145,6 +148,7 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
   // Shell scripts
   [data-path*='bin/'].icon-file-text:before,
   [data-path*='bin/'].title:before,
+  [data-name$='.n']:before,
   [data-name$='.sh']:before,
   [data-name$='.bat']:before {
     content: '\f0c8';
@@ -191,6 +195,7 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
   }
 
   // In project configuration files
+  [data-name$='.cabal']:before,
   [data-name$='.json']:before,
   [data-name$='.cson']:before,
   [data-name$='.yml']:before,
