@@ -1,3 +1,10 @@
+<a name="v0.5.0"></a>
+# v0.5.0 (2016-02-22)
+
+## :sparkles: Features
+
+- Add support for have and haskell files ([1587fe1d](https://github.com/abe33/atom-unfancy-file-icons/commit/1587fe1de00dc56e7c86a27c8f6b4d70ce38fb61))
+
 <a name="v0.4.0"></a>
 # v0.4.0 (2016-01-25)
 
