@@ -1,3 +1,11 @@
+
+<a name="v0.7.0"></a>
+# v0.7.0 (2016-05-04)
+
+## :sparkles: Features
+
+- Add support for pug files ([ab066c7d](https://github.com/abe33/atom-unfancy-file-icons/commit/ab066c7da8d6e55cada7c8827cd25fb78f0b1854))
+
 <a name="v0.6.0"></a>
 # v0.6.0 (2016-05-04)
 
