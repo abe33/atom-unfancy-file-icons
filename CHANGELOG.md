@@ -1,9 +1,17 @@
-<a name="v0.7.0"></a>
-# v0.7.0 (2016-08-03)
+<a name="v0.8.0"></a>
+# v0.8.0 (2016-08-03)
 
 ## :sparkles: Features
 
-- Add ternes config file ([fff741b4](https://github.com/abe33/atom-unfancy-file-icons/commit/fff741b4237036f95baf1fe9cefc03e368fb7e62))
+- Add ternjs config file ([fff741b4](https://github.com/abe33/atom-unfancy-file-icons/commit/fff741b4237036f95baf1fe9cefc03e368fb7e62))
+
+<a name="v0.7.0"></a>
+# v0.7.0 (2016-05-04)
+
+## :sparkles: Features
+
+- Add support for pug files ([ab066c7d](https://github.com/abe33/atom-unfancy-file-icons/commit/ab066c7da8d6e55cada7c8827cd25fb78f0b1854))
+>>>>>>> ef7cd73777c032521908a568a788ed688c2fc5e5
 
 <a name="v0.6.0"></a>
 # v0.6.0 (2016-05-04)
