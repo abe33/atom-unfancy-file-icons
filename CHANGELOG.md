@@ -1,3 +1,10 @@
+<a name="v0.7.0"></a>
+# v0.7.0 (2016-08-03)
+
+## :sparkles: Features
+
+- Add ternes config file ([fff741b4](https://github.com/abe33/atom-unfancy-file-icons/commit/fff741b4237036f95baf1fe9cefc03e368fb7e62))
+
 <a name="v0.6.0"></a>
 # v0.6.0 (2016-05-04)
 
