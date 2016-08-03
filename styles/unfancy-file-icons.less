@@ -4,14 +4,6 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-// ######## #### ##       ########    ####  ######   #######  ##    ##  ######
-// ##        ##  ##       ##           ##  ##    ## ##     ## ###   ## ##    ##
-// ##        ##  ##       ##           ##  ##       ##     ## ####  ## ##
-// ######    ##  ##       ######       ##  ##       ##     ## ## ## ##  ######
-// ##        ##  ##       ##           ##  ##       ##     ## ##  ####       ##
-// ##        ##  ##       ##           ##  ##    ## ##     ## ##   ### ##    ##
-// ##       #### ######## ########    ####  ######   #######  ##    ##  ######
-
 @yellow: #EBCB8B;
 @strong-yellow: saturate(@yellow, 30%);
 @orange: #D08770;
@@ -199,6 +191,7 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
   // In project configuration files
   [data-name$='.cabal']:before,
   [data-name$='.json']:before,
+  [data-name$='.tern-project']:before,
   [data-name$='.cson']:before,
   [data-name$='.yml']:before,
   .icon-file-text[data-name^='.travis']:before  {
