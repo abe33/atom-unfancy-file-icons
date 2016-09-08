@@ -1,3 +1,11 @@
+<a name="v0.9.0"></a>
+# v0.9.0 (2016-09-08)
+
+## :sparkles: Features
+
+- Add icon for EditorConfig configuration file ([7d6746a3](https://github.com/abe33/atom-unfancy-file-icons/commit/7d6746a3904292d0de91d7ef2857eb26bc410526))
+- Add icon for Windows batch file (.cmd) ([32067bc9](https://github.com/abe33/atom-unfancy-file-icons/commit/32067bc989992f5f5451f255598ed6b0034480db))
+
 <a name="v0.8.0"></a>
 # v0.8.0 (2016-08-03)
 
