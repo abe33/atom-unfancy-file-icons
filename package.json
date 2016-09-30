@@ -1,7 +1,7 @@
 {
   "name": "unfancy-file-icons",
   "main": "./lib/unfancy-file-icons",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "My file icons stylesheet as a package",
   "keywords": [],
   "repository": "https://github.com/abe33/atom-unfancy-file-icons",
