@@ -1,3 +1,10 @@
+<a name="v0.10.0"></a>
+# v0.10.0 (2016-09-30)
+
+## :sparkles: Features
+
+- Add icon for diff/patch files ([0f0b04ff](https://github.com/abe33/atom-unfancy-file-icons/commit/0f0b04ffcf9f7919dfd93afb53e946981bd8a143))
+
 <a name="v0.9.0"></a>
 # v0.9.0 (2016-09-08)
 
