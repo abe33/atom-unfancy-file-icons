@@ -151,6 +151,13 @@ atom-panel ul.tab-bar li.tab .title[data-name]:before {
     color: @magenta;
   }
 
+  // Diff/patch files
+  [data-name$='.diff']:before,
+  [data-name$='.patch']:before {
+    content: '\f04d';
+    color: @green;
+  }
+
 //  ######   #######  ##    ## ######## ####  ######
 // ##    ## ##     ## ###   ## ##        ##  ##    ##
 // ##       ##     ## ####  ## ##        ##  ##
