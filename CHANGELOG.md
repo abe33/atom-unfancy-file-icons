@@ -1,3 +1,12 @@
+<a name="v0.11.0"></a>
+# v0.11.0 (2017-04-05)
+
+## :sparkles: Features
+
+- Add support for \*.pyc files ([8e796261](https://github.com/abe33/atom-unfancy-file-icons/commit/8e796261246835d3e7694bd633baced139b2e694))
+- Add icon for INI configuration file ([73c182bb](https://github.com/abe33/atom-unfancy-file-icons/commit/73c182bbbc7c29eb3b84f6a3277f2f5f44fa828b))
+  The INI file format is an informal standard for configuration files for some platforms or software.
+
 <a name="v0.10.0"></a>
 # v0.10.0 (2016-09-30)
 
